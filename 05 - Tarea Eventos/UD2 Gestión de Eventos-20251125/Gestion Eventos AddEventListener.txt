@@ -1,0 +1,24 @@
+METODO ADDEVENT LISTENER
+---------------------
+addEventListener(), es un método que nos permite gestionar los eventos y las acciones que desencadenan.
+
+Eventos:
+---------
+click
+dbclick
+load
+unload
+mouseover
+mouseout
+
+Pasos a seguir:
+
+1.Declarar el elemento al que aplicamos el método addEventListener.
+2.Asociamos el evento a la función con addEventListener.
+
+-Evento principal del documento
+document.addEventListener("DOMContentLoaded", function(){
+
+
+
+
