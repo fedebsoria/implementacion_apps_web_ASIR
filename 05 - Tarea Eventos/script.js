@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let resultNoteMessages = ["SUSPENSO", "APROBADO", "NOTABLE", "SOBRESALIENTE", "MATRÍCULA DE HONOR"];
     
     const botonPromediar = document.getElementById("promediar");
+    const botonReset = document.getElementById("reset")
 
     botonPromediar.addEventListener("click", function(evento){
         //Refrain from charging an element and making the web reload
-        //evento.preventDefault();
+        evento.preventDefault();
         //Calculate and save the average note  
         let averageNote = (note1 + note2 + note3) / 3;
         const counter = Number(note1 < 5) + Number(note2 < 5) + Number(note3 <5) //this const checks if the note is < than 5 and if its turn True to 1. Counter should be 0 for passing.
@@ -47,5 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Puede iniciar su periodo de prácticas! ✌');
         }
     }
-    )
+    );
+    botonReset.addEventListener("click", function(evento1){
+        evento1.preventDefault();
+        // clear input fields
+        document.getElementById("nombre").value = "";
+        document.getElementById("apellido1").value = "";
+        document.getElementById("apellido2").value = "";
+        document.getElementById("nota1").value = "";
+        document.getElementById("nota2").value = "";
+        document.getElementById("nota3").value = "";
+        // clear results
+        resultNoteNum.innerHTML = "";
+        resultNoteTXT.innerHTML = "";
+        // focus first field
+        document.getElementById("nombre").focus();
+    });
 }); 
