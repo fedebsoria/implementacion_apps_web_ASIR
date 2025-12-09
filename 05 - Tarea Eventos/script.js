@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     //consts for saving the data from the html form.
-    const note1 = Number(document.getElementById("nota1").value);
-    console.log(note1.value);
-    const note2 = Number(document.getElementById("nota2").value);
-    const note3 = Number(document.getElementById("nota3").value);
+    // Read notes when needed instead of once at load
 
     const resultNoteNum = document.getElementById("promedio-nota");
     const resultNoteTXT = document.getElementById("resultado-nota");
     let resultNoteMessages = ["SUSPENSO", "APROBADO", "NOTABLE", "SOBRESALIENTE", "MATRÍCULA DE HONOR"];
     
     const botonPromediar = document.getElementById("promediar");
-    const botonReset = document.getElementById("reset")
+    const botonReset = document.getElementById("reset");
 
     botonPromediar.addEventListener("click", function(evento){
         //Refrain from charging an element and making the web reload
         evento.preventDefault();
+        // Read current values
+        const note1 = Number(document.getElementById("nota1").value);
+        const note2 = Number(document.getElementById("nota2").value);
+        const note3 = Number(document.getElementById("nota3").value);
         //Calculate and save the average note  
         let averageNote = (note1 + note2 + note3) / 3;
         const counter = Number(note1 < 5) + Number(note2 < 5) + Number(note3 <5) //this const checks if the note is < than 5 and if its turn True to 1. Counter should be 0 for passing.
@@ -49,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     );
-    botonReset.addEventListener("click", function(evento1){
-        evento1.preventDefault();
+    botonReset.addEventListener("click", function(evento){
+        evento.preventDefault();
         // clear input fields
         document.getElementById("nombre").value = "";
         document.getElementById("apellido1").value = "";
