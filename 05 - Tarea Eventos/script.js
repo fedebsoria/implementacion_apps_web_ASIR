@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resultNoteNum = document.getElementById("promedio-nota");
     const resultNoteTXT = document.getElementById("resultado-nota");
-    let resultNoteMessages = ["SUSPENSO", "APROBADO", "NOTABLE", "SOBRESALIENTE", "MATRÍCULA DE HONOR"];
+    let resultNoteMessages = ["⛔SUSPENSO", "✅APROBADO", "✅NOTABLE", "👏SOBRESALIENTE", "👌MATRÍCULA DE HONOR"];
     
     const botonPromediar = document.getElementById("promediar");
     const botonReset = document.getElementById("reset");
