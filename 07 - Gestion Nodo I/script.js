@@ -90,4 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     figure3.appendChild(imgHuskie);
     figure3.appendChild(enlaceHuskie);
+
+    // Bucle for de depuración
+    const figuras = [figure1, figure2, figure3];
+    for (let i = 0; i < figuras.length; i++) {
+        const fig = figuras[i]
+        console.group(`Figura #${i}`),
+        console.log("Nodo figure: ", fig);
+        console.log("Imagen src: ", fig.querySelector("img").src);
+        console.log("Enlace href: ", fig.querySelector("a").href);
+        console.groupEnd();
+    }
 });
