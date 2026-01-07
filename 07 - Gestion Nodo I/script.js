@@ -1,15 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const body = document.getElementById("body");
+
+    // Asignar estilos CSS al nodo body
+    body.style.display = "flex";
+    body.style.justifyContent = "center";
+    body.style.alignItems = "center";
+    body.style.height = "100vh";
+    body.style.margin = "0";
+
     const images = document.getElementById("imgs");
 
     // Asignar estilos CSS a nodo images
     images.style.display = "flex";
     images.style.justifyContent = "clearInterval";
-    images.style.gap = "10px"
+    images.style.gap = "10px";
+    images.style.alignItems = "center";
 
     // Crear nodos Figure para hacer una galeria
     const figure1 = document.createElement("figure");
     const figure2 = document.createElement("figure");
     const figure3 = document.createElement("figure");
+
+    // asignar estilos CSS a nodos figure
+    figure1.style.display = "flex";
+    figure1.style.flexDirection = "column";
+    figure1.style.alignItems= "center";
+    figure1.style.textAlign = "center";
+
+    figure2.style.display = "flex";
+    figure2.style.flexDirection = "column";
+    figure2.style.alignItems= "center";
+    figure2.style.textAlign = "center";
+
+    figure3.style.display = "flex";
+    figure3.style.flexDirection = "column";
+    figure3.style.alignItems= "center";
+    figure3.style.textAlign = "center";
 
     // Crear nodos de tipo Element Img
     const imgMastiff = document.createElement("img");
@@ -37,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const enlaceShiba = document.createElement('a');
     const enlaceHuskie= document.createElement('a');
 
-    
 
     // Asignar atributos "a"
     enlaceMastiff.href = "https://es.wikipedia.org/wiki/Mast%C3%ADn_del_Pirineo";
