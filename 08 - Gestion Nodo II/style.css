@@ -1,0 +1,10 @@
+body{
+    background-color: blanchedalmond;
+    align-items: center;
+}
+
+.contenedor-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
