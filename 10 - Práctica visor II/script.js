@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.className = 'miniature';
 
         // 5. Contenedor de puntos
-        const dotsContainer = document.createElement('img');
+        const dotsContainer = document.createElement('div');
         dotsContainer.id = 'dotsContainer';
 
         images.forEach((_, index) => {
