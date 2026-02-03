@@ -1,0 +1,25 @@
+body {
+    background-color: aliceblue;
+}
+
+#image-visor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#arrowL {
+    cursor: pointer;
+    width: 30px;
+    order: -1;
+}
+
+#arrowR {
+    cursor: pointer;
+    width: 30px;
+    order: 1;
+}
+
+.miniature {
+    object-fit: cover;
+}
