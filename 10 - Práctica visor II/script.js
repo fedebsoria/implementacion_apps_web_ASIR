@@ -74,11 +74,20 @@ document.addEventListener('DOMContentLoaded', () => {
             dotsContainer.appendChild(dot);
         });
 
+        // 5.5 Contenedor de texto
+        const textContainer = document.createElement('div');
+        textContainer.id = 'textContainer';
+        const text = document.createElement('p');
+        text.innerText = imagesText[actualIndex];
+        textContainer.appendChild(text);
+
+
         // 6. Ensamblar todo
         const photoContainer = document.createElement('div');
         photoContainer.id = 'photoContainer';
         photoContainer.appendChild(img);
         photoContainer.appendChild(dotsContainer);
+        photoContainer.appendChild(textContainer);
 
         visor.appendChild(arrowL);
         visor.appendChild(photoContainer);

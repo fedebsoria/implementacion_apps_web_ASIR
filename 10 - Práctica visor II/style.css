@@ -48,3 +48,16 @@ body {
     margin-top: 10px;
 }
 
+#photoContainer {
+    position: relative;
+}
+
+#textContainer {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    background-color: rgba(95, 158, 160, 0.75);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
