@@ -1,11 +1,20 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(245, 240, 255);
 }
 
 #image-visor {
     display: flex;
     align-items: center;
     gap: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#photoContainer {
+    display: flex;
+    flex-direction: column; /* Alinea los hijos (foto y punto) en vertical */
+    align-items: center;    /* Centra ambos horizontalmente */
+    gap: 8px;
 }
 
 #arrowL {
@@ -21,5 +30,21 @@ body {
 }
 
 .miniature {
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
+
+.dotEmpty, .dotFull{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+#dotsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+

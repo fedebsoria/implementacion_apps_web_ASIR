@@ -24,32 +24,67 @@ document.addEventListener('DOMContentLoaded', () => {
         'img/flecha-correcta-izq.png', 
         'img/flecha-correcta-der.png'
     ];
+     //Función principal para renderizar el visor
+    function renderVisor() {
 
-    const img = document.createElement('img');
-    img.src = images[actualIndex];
-    img.className = 'miniature';
+        // 1 Limpiar el visor para evitar la acumulación de imagenes
+        visor.innerHTML = '';
+        
+        // 2. Crear flecha izq. y su evento
+        const arrowL = document.createElement('img');
+        arrowL.className = 'arrow';
+        arrowL.id = 'arrowL';
+        arrowL.src = visorParts[2];
+        arrowL.onclick = () => {
+            actualIndex--;
+            if (actualIndex < 0) { actualIndex = 5;}
+            renderVisor(); // Volver a dibujar
+        };
 
-    const arrowL = document.createElement('img');
-    arrowL.className = 'arrow';
-    arrowL.id = 'arrowL';
-    arrowL.src = visorParts[2];
+        // 3. Crear flecha derecha y su evento
+        const arrowR = document.createElement('img');
+        arrowR.className = 'arrow';
+        arrowR.id = 'arrowR';
+        arrowR.src = visorParts[3];
+        arrowR.onclick = () => {
+            actualIndex++;
+            if (actualIndex > 5) { actualIndex = 0};
+            renderVisor(); // Volver a dibujar
+        }
+        
+        // 4. Crear Imagen Principal
+        const img = document.createElement('img');
+        img.src = images[actualIndex];
+        img.className = 'miniature';
 
-    const arrowR = document.createElement('img');
-    arrowR.className = 'arrow';
-    arrowR.id = 'arrowR';
-    arrowR.src = visorParts[3];
+        // 5. Contenedor de puntos
+        const dotsContainer = document.createElement('img');
+        dotsContainer.id = 'dotsContainer';
 
-    const dotEmpty = document.createElement('img');
-    dotEmpty.className = 'dotEmpty';
-    dotEmpty.src =visorParts[0];
+        images.forEach((_, index) => {
+            const dot = document.createElement('img');
+            // si coincide el indice ponemos un punto lleno si no el pto vacío
+            if (index === actualIndex) {
+                dot.src = visorParts[1];
+                dot.className = 'dotFull';
+            } else {
+                dot.src = visorParts[0];
+                dot.className = 'dotEmpty';
+            }
+            dotsContainer.appendChild(dot);
+        });
 
-    const dotFull = document.createElement('img');
-    dotFull.className = 'dotFull';
-    dotFull.id = 'dotFull';
-    dotFull.src = visorParts[1];
+        // 6. Ensamblar todo
+        const photoContainer = document.createElement('div');
+        photoContainer.id = 'photoContainer';
+        photoContainer.appendChild(img);
+        photoContainer.appendChild(dotsContainer);
 
-    visor.appendChild(arrowL);
-    visor.appendChild(img);
-    visor.appendChild(arrowR);
+        visor.appendChild(arrowL);
+        visor.appendChild(photoContainer);
+        visor.appendChild(arrowR);
+    };
 
+    //Llamar a la función por primera vez
+    renderVisor();
 });
