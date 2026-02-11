@@ -3,7 +3,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
     //Objetos alumnos
     const alumna1 = {
-        imagen : 'img/alumna1.jpg',
+        img : 'img/alumna1.jpg',
         nombre : 'Cristina',
         apellido : 'Lopez',
         edad : '24',
@@ -18,7 +18,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
         curso : '1º DAM'
     };
 
-    const alumno3 = {
+    const alumna3 = {
         img : 'img/alumna3.jpg',
         apellido : 'Ariza',
         edad : '26',
@@ -28,36 +28,63 @@ document.addEventListener( 'DOMContentLoaded', () => {
     //Se crea una función para recorres los objetos
     function iterateAlumnos ( alumno ) {
         // div para el alumno
-        const alumnoDIV = document.createObject('div');
+        const alumnoDIV = document.createElement('div');
         alumnoDIV.className = 'alumno';
 
-        const alumnoIMG = document.createObject('img');
+        const alumnoIMG = document.createElement('img');
         alumnoIMG.className = 'alumno-imagen';
         alumnoIMG.src = alumno.img;
 
         //Iterar datos del alumno
-        const alumnoDatos = ['Apellido: ', 'Edad: ', 'Curso: ']
+        const alumnoDatosEtiqueta = ['Apellido: ', 'Edad: ', 'Curso: '];
+        const alumnoDatosKey = ['apellido', 'edad', 'curso'];
 
-        const alumnoDatosDiv = document.createObject('div');
+        const alumnoDatosDiv = document.createElement('div');
         alumnoDatosDiv.id = 'datos-alumno';
 
-        for (let i = 0; i < 3; i++) {
-            const datoAlumno = document.createObjet('p');
-            datoAlumno.className = 'dato-alumno-individual';
-            datoAlumno.innerText = alumnoDatos[i] + alumno[i+1];
-            alumnoDatosDiv.appendChild(datoAlumno);
+        for (let i = 0; i < alumnoDatosEtiqueta.length; i++) {
+            const key = alumnoDatosKey[i];
+            const etiqueta = alumnoDatosEtiqueta[i];
+
+            const datoAlumnoEtiqueta = document.createElement('p');
+            datoAlumnoEtiqueta.className = 'dato-alumno-etiqueta';
+            datoAlumnoEtiqueta.innerText = etiqueta;
+
+            const datoAlumnoValor = document.createElement('p');
+            datoAlumnoValor.className = 'dato-alumno-valor';
+            datoAlumnoValor.innerText = alumno[key];
+
+            alumnoDatosDiv.appendChild(datoAlumnoEtiqueta);
+            alumnoDatosDiv.appendChild(datoAlumnoValor);
         }
 
         alumnoDIV.appendChild(alumnoIMG);
         alumnoDIV.appendChild(alumnoDatosDiv);
+
+        return alumnoDIV;
     };
 
     function renderWeb () {
-        const alumna1DIV = iterateAlumnos(alumna1);
 
-        parent.appendChild(alumna1DIV);
+        const listadoAlumnos = [alumna1, alumno2, alumna3];
 
+        const alumnosLineaUno = document.createElement('div');
+        alumnosLineaUno.className = 'linea-alumnos';
+
+        const alumnosLineaDos = document.createElement('div');
+        alumnosLineaDos.className = 'linea-alumnos';
+
+        for (let i = 0; i < listadoAlumnos.length; i++) {
+            const alumnoRender = iterateAlumnos(listadoAlumnos[i]);
+            alumnosLineaUno.appendChild(alumnoRender);
+            parent.appendChild(alumnosLineaUno);
+        }
         
+        for (let i = 0; i < listadoAlumnos.length; i++) {
+            const alumnoRender = iterateAlumnos(listadoAlumnos[i]);
+            alumnosLineaDos.appendChild(alumnoRender);
+            parent.appendChild(alumnosLineaDos);
+        }  
     }
     
     renderWeb();
