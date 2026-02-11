@@ -1,2 +1,15 @@
 #parent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.linea-alumnos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
 }
