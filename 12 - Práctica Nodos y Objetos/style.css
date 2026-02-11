@@ -20,22 +20,34 @@
     text-align: center;
 }
 
-.dato-alumno-individual {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+/* 1. Contenedor que envuelve todos los datos */
+.datos-alumno-individual {
+    display: flex;         /* Activamos Flexbox */
+    flex-wrap: wrap;       /* Permite que los elementos salten de línea */
+    justify-content: center; /* Centra el contenido si la tarjeta es ancha */
+    width: 200px;          /* Ajusta este ancho según necesites */
+    margin: 0 auto;        /* Centra el bloque de datos */
 }
 
-.dato-alumno-etiqueta, 
-.dato-alumno-valor {
-    display: inline-block;
-    margin: 2px 0;
+/* 2. Estilo para las Etiquetas (Apellido, Edad, etc.) */
+[id^="dato-alumno-etiqueta-"] {
+    display: inline;       /* Hace que no ocupen toda la línea */
+    font-weight: bold;     /* Negrita */
+    color: red;            /* Color rojo */
+    margin: 0;             /* Elimina el espacio por defecto de los <p> */
+    padding-right: 5px;    /* Espacio pequeño con el valor */
 }
 
-.dato-alumno-etiqueta {
-    font-weight: bold;
-    color: red;
-    clear: both;
-    margin-right: 5px;
+/* 3. Estilo para los Valores (Lopez, 24, etc.) */
+[id^="dato-alumno-valor"] {
+    display: inline;       /* Hace que se coloque al lado de la etiqueta */
+    margin: 0;             /* Elimina el espacio por defecto de los <p> */
+    flex-basis: 60%;       /* Ayuda a que el siguiente par salte de línea */
+    text-align: left;      /* Alinea el texto a la izquierda */
+}
+
+/* 4. Forzar el salto de línea después de cada valor */
+[id^="dato-alumno-valor"]::after {
+    content: "\a";         /* Inserta un salto de línea invisible */
+    white-space: pre;
 }

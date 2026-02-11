@@ -20,6 +20,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
     const alumna3 = {
         img : 'img/alumna3.jpg',
+        nombre: 'Mónica',
         apellido : 'Ariza',
         edad : '26',
         curso : '2º DAW'
@@ -47,11 +48,11 @@ document.addEventListener( 'DOMContentLoaded', () => {
             const etiqueta = alumnoDatosEtiqueta[i];
 
             const datoAlumnoEtiqueta = document.createElement('p');
-            datoAlumnoEtiqueta.className = 'dato-alumno-etiqueta';
+            datoAlumnoEtiqueta.id = 'dato-alumno-etiqueta-'+etiqueta;
             datoAlumnoEtiqueta.innerText = etiqueta;
 
             const datoAlumnoValor = document.createElement('p');
-            datoAlumnoValor.className = 'dato-alumno-valor';
+            datoAlumnoValor.id = 'dato-alumno-valor'+key;
             datoAlumnoValor.innerText = alumno[key];
 
             alumnoDatosDiv.appendChild(datoAlumnoEtiqueta);
