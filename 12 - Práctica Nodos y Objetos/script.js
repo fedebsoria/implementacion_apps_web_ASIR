@@ -36,11 +36,11 @@ document.addEventListener( 'DOMContentLoaded', () => {
         alumnoIMG.src = alumno.img;
 
         //Iterar datos del alumno
-        const alumnoDatosEtiqueta = ['Apellido: ', 'Edad: ', 'Curso: '];
-        const alumnoDatosKey = ['apellido', 'edad', 'curso'];
+        const alumnoDatosEtiqueta = ['Nombre','Apellido: ', 'Edad: ', 'Curso: '];
+        const alumnoDatosKey = ['nombre', 'apellido', 'edad', 'curso'];
 
         const alumnoDatosDiv = document.createElement('div');
-        alumnoDatosDiv.id = 'datos-alumno';
+        alumnoDatosDiv.className = 'datos-alumno-individual';
 
         for (let i = 0; i < alumnoDatosEtiqueta.length; i++) {
             const key = alumnoDatosKey[i];
