@@ -1,0 +1,11 @@
+{
+    "Nombre": "Federico",
+    "Apellidos": "Soria",
+    "Edad": 35,
+    "Curso actual": "ASIR",
+    "Lista de asignaturas matriculadas": [
+	 "IAW",
+	 "BB.DD.",
+	 "ASO"
+	]
+}

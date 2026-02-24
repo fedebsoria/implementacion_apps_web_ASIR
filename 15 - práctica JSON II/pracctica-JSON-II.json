@@ -1,0 +1,35 @@
+{ 
+    "Película 1": {
+        "Título": "Nosferatu",
+        "Año de Estreno": 2024,
+        "Genero": "Terror",
+        "Duración en minutos": 132,
+        "Lista de actores principales": [
+            "Lily-Rose Depp",
+            "Bill Sarsgard",
+            "Willem Dafoe"
+        ]
+    },
+    "Película 2":{
+        "Título": "Nosferatu: Phantom der Nacht ",
+        "Año de Estreno": 1979,
+        "Genero": "Terror",
+        "Duración en minutos": 106,
+        "Lista de actores principales": [
+            "Klaus Kinski",
+            "Isabelle Adjani",
+            "Bruno Ganz"
+        ]
+    },
+    "Película 3": {
+        "Título": "Nosferatu: Eine Symphonie des Grauens",
+        "Año de Estreno": 1922,
+        "Genero": "Terror",
+        "Duración en minutos": 91,
+        "Lista de actores principales": [
+            "Max Schreck",
+            "Alexander Granach",
+            "Greta Schröeder"
+        ]
+    }
+}
