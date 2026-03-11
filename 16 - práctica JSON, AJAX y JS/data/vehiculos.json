@@ -1,0 +1,56 @@
+{
+    "vehiculo1" :{
+        "Foto" : "img/bmw.jpg",
+        "Marca" : "BMW",
+        "Modelo" : "M3",
+        "Kilometros" : 160000,
+        "Año" : 2010,
+        "Precio" : 15000,
+        "Motor" : "Gasolina"
+    },
+    "vehiculo2" :{
+        "Foto" : "img/fiat.jpg",
+        "Marca" : "Fiat",
+        "Modelo" : "500",
+        "Kilometros" : 90000,
+        "Año" : 2017,
+        "Precio" : 13000,
+        "Motor" : "Gasolina"
+    },
+    "vehiculo3" :{
+        "Foto" : "img/golf.jpg",
+        "Marca" : "Volkswagen",
+        "Modelo" : "Golf",
+        "Kilometros" : 200000,
+        "Año" : 2006,
+        "Precio" : 5000,
+        "Motor" : "Diesel"
+    },
+    "vehiculo4" :{
+        "Foto" : "img/opel.jpg",
+        "Marca" : "Opel",
+        "Modelo" : "Astra",
+        "Kilometros" : 300000,
+        "Año" : 2012,
+        "Precio" : 7500,
+        "Motor" : "Diesel"
+    },
+    "vehiculo5" :{
+        "Foto" : "img/peugeot.jpg",
+        "Marca" : "Peugeot",
+        "Modelo" : "507",
+        "Kilometros" : 350000,
+        "Año" : 2005,
+        "Precio" : 9000,
+        "Motor" : "Diesel"
+    },
+    "vehiculo6" :{
+        "Foto" : "img/subaru.jpg",
+        "Marca" : "Subaru",
+        "Modelo" : "Tribeca",
+        "Kilometros" : 100745,
+        "Año" : 2010,
+        "Precio" : 13941,
+        "Motor" : "Gasolina"
+    }
+}
