@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.calculadora-section {
+    background: #f0f4f8;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.calculadora-section h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#wrapperResultados {
+    margin-top: 20px;
+}
+
+.info-detalle-card {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.detail-header img {
+    width: 45px;
+    height: 45px;
+}
+
+.detail-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+h4 {
+    color: #2980b9;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Replicación de la Grid del PDF */
+.chino-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.grid-chino {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #e0e0e0;
+}
+
+.animal-card {
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 20px 10px;
+    background: #fff;
+}
+
+.animal-card img {
+    max-width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.animal-card p {
+    margin: 0;
+    font-weight: bold;
+    color: #555;
+}

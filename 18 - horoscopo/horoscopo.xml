@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horoscopo>
+    <zodiaco>
+        <signo id="aries">
+            <nombre>Aries</nombre>
+            <inicio>21/03</inicio>
+            <fin>19/04</fin>
+            <imagen>ico-aries.png</imagen>
+            <prediccion>Posiblemente disfrutes de un buen día, sabrás qué hacer, cuándo y cómo; además, también podrías recibir como frutos el resultado de tus esfuerzos pasados. Tendrás éxito, seguridad y capacidad para triunfar en los proyectos que ahora estructures. Finalmente conseguirás ganarte el respeto de los demás.</prediccion>
+            <caracteristicas>Aries forma parte de los signos cardinales y al mismo tiempo es un signo de fuego; también es el primer signo del zodiaco precisamente por eso simboliza el inicio, la creación. Se caracteriza por ser una persona rebosante de energía y entusiasmo, avanzada y aventurera, adora la libertad, los retos y las nuevas ideas. Los Aries son de acción rápida y confían en su poder.</caracteristicas>
+        </signo>
+        <signo id="tauro">
+            <nombre>Tauro</nombre>
+            <inicio>20/04</inicio>
+            <fin>20/05</fin>
+            <imagen>ico-tauro.png</imagen>
+            <prediccion>Día de estabilidad financiera y decisiones firmes.</prediccion>
+            <caracteristicas>Signo de tierra, paciente, persistente y decidido.</caracteristicas>
+        </signo>
+        <signo id="geminis">
+            <nombre>Géminis</nombre>
+            <inicio>21/05</inicio>
+            <fin>20/06</fin>
+            <imagen>ico-geminis.png</imagen>
+            <prediccion>Tu mente estará muy activa hoy, ideal para la comunicación.</prediccion>
+            <caracteristicas>Signo de aire, adaptable, intelectual y elocuente.</caracteristicas>
+        </signo>
+        <signo id="cancer">
+            <nombre>Cáncer</nombre>
+            <inicio>21/06</inicio>
+            <fin>22/07</fin>
+            <imagen>ico-cancer.png</imagen>
+            <prediccion>Escucha tu intuición en las decisiones familiares.</prediccion>
+            <caracteristicas>Signo de agua, emocional, protector y familiar.</caracteristicas>
+        </signo>
+        <signo id="leo">
+            <nombre>Leo</nombre>
+            <inicio>23/07</inicio>
+            <fin>22/08</fin>
+            <imagen>ico-leo.png</imagen>
+            <prediccion>Momento de brillar y tomar el liderazgo en tus proyectos.</prediccion>
+            <caracteristicas>Signo de fuego, generoso, apasionado y seguro de sí mismo.</caracteristicas>
+        </signo>
+        <signo id="virgo">
+            <nombre>Virgo</nombre>
+            <inicio>23/08</inicio>
+            <fin>22/09</fin>
+            <imagen>ico-virgo.png</imagen>
+            <prediccion>Buen día para organizar tus tareas pendientes y enfocar la rutina.</prediccion>
+            <caracteristicas>Signo de tierra, analítico, perfeccionista y trabajador.</caracteristicas>
+        </signo>
+        <signo id="libra">
+            <nombre>Libra</nombre>
+            <inicio>23/09</inicio>
+            <fin>22/10</fin>
+            <imagen>ico-libra.png</imagen>
+            <prediccion>Busca el equilibrio en tus relaciones interpersonales hoy.</prediccion>
+            <caracteristicas>Signo de aire, diplomático, idealista y amante de la justicia.</caracteristicas>
+        </signo>
+        <signo id="escorpio">
+            <nombre>Escorpio</nombre>
+            <inicio>23/10</inicio>
+            <fin>21/11</fin>
+            <imagen>ico-escorpio.png</imagen>
+            <prediccion>Tu determinación te permitirá superar cualquier obstáculo.</prediccion>
+            <caracteristicas>Signo de agua, poderoso, intuitivo y apasionado.</caracteristicas>
+        </signo>
+        <signo id="sagitario">
+            <nombre>Sagitario</nombre>
+            <inicio>22/11</inicio>
+            <fin>21/12</fin>
+            <imagen>ico-sagitario.png</imagen>
+            <prediccion>Nuevas aventuras u oportunidades de aprendizaje aparecen.</prediccion>
+            <caracteristicas>Signo de fuego, optimista, amante de la libertad y honesto.</caracteristicas>
+        </signo>
+        <signo id="capricornio">
+            <nombre>Capricornio</nombre>
+            <inicio>22/12</inicio>
+            <fin>19/01</fin>
+            <imagen>ico-capricornio.png</imagen>
+            <prediccion>La paciencia y el esfuerzo constante darán sus frutos.</prediccion>
+            <caracteristicas>Signo de tierra, ambicioso, disciplinado y prudente.</caracteristicas>
+        </signo>
+        <signo id="acuario">
+            <nombre>Acuario</nombre>
+            <inicio>20/01</inicio>
+            <fin>18/02</fin>
+            <imagen>ico-acuario.png</imagen>
+            <prediccion>Tus ideas innovadoras llamarán la atención de tu entorno.</prediccion>
+            <caracteristicas>Signo de aire, original, independiente y humanitario.</caracteristicas>
+        </signo>
+        <signo id="piscis">
+            <nombre>Piscis</nombre>
+            <inicio>19/02</inicio>
+            <fin>20/03</fin>
+            <imagen>ico-piscis.png</imagen>
+            <prediccion>Día excelente para la creatividad y conectar con tu lado espiritual.</prediccion>
+            <caracteristicas>Signo de agua, imaginativo, sensible y compasivo.</caracteristicas>
+        </signo>
+    </zodiaco>
+    <chino>
+        <animal residuo="4"><nombre>Rata</nombre><imagen>ico-rata.png</imagen></animal>
+        <animal residuo="5"><nombre>Buey</nombre><imagen>ico-buey.png</imagen></animal>
+        <animal residuo="6"><nombre>Tigre</nombre><imagen>ico-tigre.png</imagen></animal>
+        <animal residuo="7"><nombre>Conejo</nombre><imagen>ico-conejo.png</imagen></animal>
+        <animal residuo="8"><nombre>Dragón</nombre><imagen>ico-dragon.png</imagen></animal>
+        <animal residuo="9"><nombre>Serpiente</nombre><imagen>ico-serpiente.png</imagen></animal>
+        <animal residuo="10"><nombre>Caballo</nombre><imagen>ico-caballo.png</imagen></animal>
+        <animal residuo="11"><nombre>Cabra</nombre><imagen>ico-cabra.png</imagen></animal>
+        <animal residuo="0"><nombre>Mono</nombre><imagen>ico-mono.png</imagen></animal>
+        <animal residuo="1"><nombre>Gallo</nombre><imagen>ico-gallo.png</imagen></animal>
+        <animal residuo="2"><nombre>Perro</nombre><imagen>ico-perro.png</imagen></animal>
+        <animal residuo="3"><nombre>Cerdo</nombre><imagen>ico-cerdo.png</imagen></animal>
+    </chino>
+</horoscopo>

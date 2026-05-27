@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <producto>
+        <nombre>Portátil Lenovo IdeaPad</nombre>
+        <descripcion>Portátil para uso doméstico y ofimática.</descripcion>
+        <precio>699.99</precio>
+        <caracteristicas>
+            <caracteristica>
+                <nombre>Pantalla</nombre>
+                <valor>15.6 pulgadas Full HD</valor>
+            </caracteristica>
+            <caracteristica>
+                <nombre>Procesador</nombre>
+                <valor>Intel Core i5</valor>
+            </caracteristica>
+            <caracteristica>
+                <nombre>Memoria</nombre>
+                <valor>16 GB RAM</valor>
+            </caracteristica>
+        </caracteristicas>
+    </producto>
+
+    <producto>
+        <nombre>Smartphone Samsung Galaxy A54</nombre>
+        <descripcion>Teléfono móvil de gama media con buena autonomía.</descripcion>
+        <precio>449.99</precio>
+        <caracteristicas>
+            <caracteristica>
+                <nombre>Pantalla</nombre>
+                <valor>6.4 pulgadas AMOLED</valor>
+            </caracteristica>
+            <caracteristica>
+                <nombre>Procesador</nombre>
+                <valor>Exynos 1380</valor>
+            </caracteristica>
+            <caracteristica>
+                <nombre>Memoria</nombre>
+                <valor>8 GB RAM</valor>
+            </caracteristica>
+        </caracteristicas>
+    </producto>
+</catalogo>
